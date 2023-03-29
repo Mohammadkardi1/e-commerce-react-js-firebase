@@ -3,7 +3,7 @@ import { ProductsContext } from '../Global/ProductsContext'
 import { useNavigate} from 'react-router-dom'
 import {CartContext} from '../Global/CartContext'
 import { LoginPopup } from './Auth/LoginPopup'
-
+import {DeleteProduct} from './DeleteProduct'
 
 export const Products = () => {
 
@@ -61,6 +61,7 @@ export const Products = () => {
                                         Add to cart
                                     </button>
                                 </div>
+                                <DeleteProduct id={product.id} productImageURL={product.productImageURL}/>
                             </div>
                         </div>
                     )
