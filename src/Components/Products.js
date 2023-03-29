@@ -28,9 +28,6 @@ export const Products = () => {
             setIsModelOpen(true)
             console.log("Please log in")
         }
-
-
-
     }
 
 
