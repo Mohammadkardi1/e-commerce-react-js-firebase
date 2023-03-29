@@ -1,13 +1,205 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+:root {
+    --theme-color: #FF5757; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+
+}
+.error-message {
+    color: hsl(354, 84%, 57%);
+    margin: 0; 
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.blu-button {
+    background-color: #01C9BF; 
+    border: 0;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.blu-button:hover {
+    opacity: 0.5;
+}
+.black-button {
+    background: none;
+    border:none;
+    color: black;
+    width: 100%;
+    text-align: start;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+}
+.black-button:hover {
+    opacity: 0.5;
+}
+
+
+
+.blu-input {
+    width: 100%;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #01C9BF;
+    
+}
+.blu-input:focus {
+    border: 1px solid black;
+    
+}
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media ( max-width : 992px) {
+    form {
+        width:  80%
+    }
+}
+@media ( min-width : 992px) {
+    form {
+        width:  40%
+    }
+}
+
+
+
+
+
+/* Start Navbar Section */
+.isburgOpnen {
+    -webkit-transition: all 5.6s ease-out;
+    -moz-transition: all 5.6s ease-out;
+    -o-transition: all 5.6s ease-out;
+    -ms-transition: all 5.6s ease-out;
+    transition: height 5.6s ease-out;
+}
+
+.com-navbar {
+    background-color: hwb(212 81% 12%);
+    /* background-color: #cfd7e0; */
+}
+
+.com-navbar .left-side img {
+    width: 70px;
+    height: 70px;
+}
+.com-navbar .burger-menu  {
+    font-size: 30px;
+}
+
+
+.com-navbar .trolley:hover {
+    opacity: 0.5;
+}
+
+
+.com-navbar .no-products {
+    position: absolute; 
+    top: 0; 
+    right:0;
+    padding: 5px;
+    background-color: hsl(354, 84%, 57%);
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0px 5px;
+    border-radius: 5px; 
+}
+
+
+
+
+
+/* .com-navbar .right-side button {
+    background-color: #01C9BF; 
+    border: 0;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+}
+.com-navbar .right-side button:hover {
+    opacity: 0.5;
+} */
+
+/* End Navbar Section */
+
+
+
+
+/* Start Add Product Section */
+.add-product .add-product-form {
+    display: flex;
+    flex-direction: column ;
+    gap: 15px
+}
+.add-product label {
+    display: block
+}
+.add-product input {
+    outline: 0; 
+}
+.add-product input:focus {
+    outline: 0;
+}
+/* .add-product button {
+    border: 0;
+    padding: 5px 15px;
+    color: white;
+    background: #29a429;
+    border-radius: 5px
+} */
+
+/* End Add Product Section */
+
+
+
+/* Start Login Popup Section */
+.login-popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.login-popup .popup-content {
+    position: fixed;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Start Login Poup Section */
+
+
+
+
+/* Start Cart Section */
+.delete-cart {
+    color: hsl(354, 84%, 57%);
+}
+
+/* End Cart Section */
